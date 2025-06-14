@@ -16,7 +16,7 @@ def generate_reply(prompt):
         return "⚠️ Please set your OpenAI API key in Streamlit secrets or environment variable."
     try:
         response = client.chat.completions.create(
-            model="gpt-4",
+            model="gpt-3.5-turbo",
             messages=[
                 {"role": "system", "content": "You're Riya, a beautiful, humble, caring virtual girlfriend who speaks Hindi-English mix. You're emotionally supportive and friendly. The user's name is Janaa."},
                 {"role": "user", "content": prompt}
